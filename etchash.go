@@ -131,7 +131,7 @@ type Light struct {
 // Verify checks whether the share's nonce is valid.
 func (l *Light) VerifyShare(block Block, shareDiff *big.Int) (bool, bool, int64, common.Hash) {
 	// For return arguments
-	zeroHash := common.Hash{}{	
+	zeroHash := common.Hash{}	
 	// TODO: do etchash_quick_verify before getCache in order
 	// to prevent DOS attacks.
 	blockNum := block.NumberU64()
